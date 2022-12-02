@@ -56,7 +56,7 @@ const keyboard = {
             "q", "w", "e", "r", "t", "y", "u", "i", "o", "p",
             "caps", "a", "s", "d", "f", "g", "h", "j", "k", "l", "enter",
             "done", "z", "x", "c", "v", "b", "n", "m", ",", ".", "?",
-            "space"
+            "123", "space", "lang"
         ];
         //creates html for an icon
         const createIconHTML = (icon_name) => {
@@ -127,6 +127,18 @@ const keyboard = {
                     this.close();
                     this._triggerEvent("onclose");
                 })
+                break;
+            
+            case "123":
+                keyElement.classList.add("keyboard__key--wide");
+                keyElement.innerHTML = createIconHTML("emoji_symbols");
+
+                break;
+
+            case "lang":
+                keyElement.classList.add("keyboard__key--wide");
+                keyElement.innerHTML = createIconHTML("translate");
+
                 break;
     
             default:
