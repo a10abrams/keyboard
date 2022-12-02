@@ -133,7 +133,7 @@ const keyboard = {
                 keyElement.classList.add("keyboard__key--wide", "keyboard__key--dark");
                 keyElement.innerHTML = createIconHTML("check_circle");
         
-                //this is what "deletes"
+                //this is what closes the keyboard
                 keyElement.addEventListener("click", () => {
                     this.close();
                     this._triggerEvent("onclose");
@@ -155,7 +155,7 @@ const keyboard = {
             default:
                 keyElement.textContent = key.toLowerCase();
     
-                //this is what "deletes"
+                //this defaults all input to lowercase / changes to uppercase for capslock
                 keyElement.addEventListener("click", () => {
                     this.properties.value += this.properties.capslock ? key.toUpperCase () : key.toLowerCase();
                     this._triggerEvent("oninput");
