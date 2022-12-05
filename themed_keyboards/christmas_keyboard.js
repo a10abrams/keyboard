@@ -90,7 +90,7 @@ const keyboard = {
     
                 //what inputs "q"
                 keyElement.addEventListener("click", () => {
-                    this.properties.value = "q";
+                    this.properties.value = "r";
                     this._triggerEvent("oninput");
                 });
                 break;
