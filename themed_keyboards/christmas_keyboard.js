@@ -80,7 +80,7 @@ const keyboard = {
 
                 //what inputs "q"
                 keyElement.addEventListener("click", () => {
-                    this.properties.value = "q";
+                    this.properties.value += "q";
                     this._triggerEvent("oninput");
                 });
                 break;
@@ -88,9 +88,9 @@ const keyboard = {
                 keyElement.classList.add("keyboard__key--accent_1");
                 keyElement.innerHTML = "r";
     
-                //what inputs "q"
+                //what inputs "r"
                 keyElement.addEventListener("click", () => {
-                    this.properties.value = "r";
+                    this.properties.value += "r";
                     this._triggerEvent("oninput");
                 });
                 break;
@@ -99,9 +99,9 @@ const keyboard = {
                 keyElement.classList.add("keyboard__key--accent_1");
                 keyElement.innerHTML = "t";
 
-                //what inputs "r"
+                //what inputs "t"
                 keyElement.addEventListener("click", () => {
-                    this.properties.value = "r";
+                    this.properties.value += "t";
                     this._triggerEvent("oninput");
                 });
                 break;
@@ -112,7 +112,7 @@ const keyboard = {
 
                 //what inputs "y"
                 keyElement.addEventListener("click", () => {
-                    this.properties.value = "y";
+                    this.properties.value += "y";
                     this._triggerEvent("oninput");
                 });
                 break;
