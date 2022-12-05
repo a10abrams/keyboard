@@ -84,9 +84,40 @@ const keyboard = {
                     this._triggerEvent("oninput");
                 });
                 break;
+            case "r":
+                keyElement.classList.add("keyboard__key--accent_1");
+                keyElement.innerHTML = "r";
+    
+                //what inputs "q"
+                keyElement.addEventListener("click", () => {
+                    this.properties.value = "q";
+                    this._triggerEvent("oninput");
+                });
+                break;
+
+            case "t":
+                keyElement.classList.add("keyboard__key--accent_1");
+                keyElement.innerHTML = "t";
+
+                //what inputs "r"
+                keyElement.addEventListener("click", () => {
+                    this.properties.value = "r";
+                    this._triggerEvent("oninput");
+                });
+                break;
                 
+            case "y":
+                keyElement.classList.add("keyboard__key--accent_1");
+                keyElement.innerHTML = "y";
+
+                //what inputs "y"
+                keyElement.addEventListener("click", () => {
+                    this.properties.value = "y";
+                    this._triggerEvent("oninput");
+                });
+                break;
             case "backspace":
-                keyElement.classList.add("keyboard__key--wide");
+                keyElement.classList.add("keyboard__key--wide", "keyboard__key--accent_1");
                 keyElement.innerHTML = createIconHTML("backspace");
 
                 //this is what "deletes"
