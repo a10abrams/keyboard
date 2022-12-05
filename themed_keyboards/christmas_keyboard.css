@@ -53,6 +53,10 @@
     max-width: 500px;
 }
 
+.keyboard__key--accent_1 {
+    background: #a58700;
+}
+
 .keyboard__key--activatable::after {
     content: '';
     top: 10px;
