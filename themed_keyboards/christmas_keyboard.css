@@ -86,7 +86,7 @@
 }
 
 .keyboard__key--active::after {
-    background: #fbff00;
+    background: #fff;
 }
 
 .keyboard__key--dark {
