@@ -66,6 +66,14 @@
     background: #D41524;
 }
 
+.keyboard__key--accent_4 {
+    background: #6EB4E7;
+}
+
+.keyboard__key--qmark {
+    background: #022F89;
+}
+
 .keyboard__key--activatable::after {
     content: '';
     top: 10px;
