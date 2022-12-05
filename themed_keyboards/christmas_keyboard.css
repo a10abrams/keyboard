@@ -62,6 +62,10 @@
     color: #000;
 }
 
+.keyboard__key--accent_3 {
+    background: #D41524;
+}
+
 .keyboard__key--activatable::after {
     content: '';
     top: 10px;
