@@ -15,3 +15,4 @@ The files that constitute other themes will follow the naming convention "[theme
 1. Spanish capability
 2. Japanese capability
 3. Make a back end // make the keyboard downloadable/a chrome extension?
+4. Add on-theme images(?) to the left and right that disappear when the keyboard is minimized to a certain size
