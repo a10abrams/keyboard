@@ -258,6 +258,61 @@ const keyboard = {
                     keyElement.classList.toggle("keyboard__key--active", this.properties.capsLock);
                 });
                 break;
+             
+            case "a":
+                keyElement.classList.add("keyboard__key--accent_3");
+                keyElement.innerHTML = "a";
+
+                //what inputs "a"
+                keyElement.addEventListener("click", () => {
+                    this.properties.value += "a";
+                    this._triggerEvent("oninput");
+                });
+                break;
+
+            case "s":
+                keyElement.classList.add("keyboard__key--accent_3");
+                keyElement.innerHTML = "s";
+
+                //what inputs "s"
+                keyElement.addEventListener("click", () => {
+                    this.properties.value += "s";
+                    this._triggerEvent("oninput");
+                });
+                break;
+
+            case "h":
+                keyElement.classList.add("keyboard__key--accent_3");
+                keyElement.innerHTML = "h";
+
+                //what inputs "h"
+                keyElement.addEventListener("click", () => {
+                    this.properties.value += "h";
+                    this._triggerEvent("oninput");
+                });
+                break;
+
+            case "j":
+                keyElement.classList.add("keyboard__key--accent_3");
+                keyElement.innerHTML = "j";
+
+                //what inputs "j"
+                keyElement.addEventListener("click", () => {
+                    this.properties.value += "j";
+                    this._triggerEvent("oninput");
+                });
+                break;
+
+            case "k":
+                keyElement.classList.add("keyboard__key--accent_3");
+                keyElement.innerHTML = "k";
+
+                //what inputs "k"
+                keyElement.addEventListener("click", () => {
+                    this.properties.value += "k";
+                    this._triggerEvent("oninput");
+                });
+                break;
 
             case "enter":
                 keyElement.classList.add("keyboard__key--wide");
