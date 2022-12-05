@@ -75,7 +75,7 @@ const keyboard = {
         //based on key being looped, there are conditions:
         switch (key) {
             case "1":
-                keyElement.classList.add("keyboard__key--wide", "keyboard__key--accent_2");
+                keyElement.classList.add("keyboard__key--accent_2");
                 keyElement.innerHTML = "1";
 
                 //what inputs 1;
@@ -86,7 +86,7 @@ const keyboard = {
                 break;
 
             case "2":
-                keyElement.classList.add("keyboard__key--wide", "keyboard__key--accent_2");
+                keyElement.classList.add("keyboard__key--accent_2");
                 keyElement.innerHTML = "2";
 
                 //what inputs 2;
@@ -97,7 +97,7 @@ const keyboard = {
                 break;
 
             case "3":
-                keyElement.classList.add("keyboard__key--wide", "keyboard__key--accent_2");
+                keyElement.classList.add("keyboard__key--accent_2");
                 keyElement.innerHTML = "3";
 
                 //what inputs 3;
@@ -108,7 +108,7 @@ const keyboard = {
                 break;
 
             case "4":
-                keyElement.classList.add("keyboard__key--wide", "keyboard__key--accent_2");
+                keyElement.classList.add("keyboard__key--accent_2");
                 keyElement.innerHTML = "4";
 
                 //what inputs 1;
@@ -119,7 +119,7 @@ const keyboard = {
                 break;
 
             case "5":
-                keyElement.classList.add("keyboard__key--wide", "keyboard__key--accent_2");
+                keyElement.classList.add("keyboard__key--accent_2");
                 keyElement.innerHTML = "1";
 
                 //what inputs 5;
@@ -130,7 +130,7 @@ const keyboard = {
                 break;
 
             case "6":
-                keyElement.classList.add("keyboard__key--wide", "keyboard__key--accent_2");
+                keyElement.classList.add("keyboard__key--accent_2");
                 keyElement.innerHTML = "6";
 
                 //what inputs 6;
@@ -141,7 +141,7 @@ const keyboard = {
                 break;
             
             case "7":
-                keyElement.classList.add("keyboard__key--wide", "keyboard__key--accent_2");
+                keyElement.classList.add("keyboard__key--accent_2");
                 keyElement.innerHTML = "7";
 
                 //what inputs 7;
@@ -152,7 +152,7 @@ const keyboard = {
                 break;
             
             case "8":
-                keyElement.classList.add("keyboard__key--wide", "keyboard__key--accent_2");
+                keyElement.classList.add("keyboard__key--accent_2");
                 keyElement.innerHTML = "8";
 
                 //what inputs 8;
@@ -163,7 +163,7 @@ const keyboard = {
                 break;
 
             case "9":
-                keyElement.classList.add("keyboard__key--wide", "keyboard__key--accent_2");
+                keyElement.classList.add("keyboard__key--accent_2");
                 keyElement.innerHTML = "9";
 
                 //what inputs 9;
@@ -174,7 +174,7 @@ const keyboard = {
                 break;
 
             case "0":
-                keyElement.classList.add("keyboard__key--wide", "keyboard__key--accent_1");
+                keyElement.classList.add("keyboard__key--accent_2");
                 keyElement.innerHTML = "0";
 
                 //what inputs 1;
@@ -182,6 +182,28 @@ const keyboard = {
                     this.properties.value += "0";
                     this._triggerEvent("oninput");
                 });
+                break;
+            
+             case "-":
+                keyElement.classList.add("keyboard__key--accent_1");
+                keyElement.innerHTML ="-";
+        
+                //this is what spaces
+                keyElement.addEventListener("click", () => {
+                    this.properties.value += "-";
+                    this._triggerEvent("oninput");
+                })
+                break;
+            
+             case "=":
+                keyElement.classList.add("keyboard__key--accent_1");
+                keyElement.innerHTML ="=";
+        
+                //this is what spaces
+                keyElement.addEventListener("click", () => {
+                    this.properties.value += "=";
+                    this._triggerEvent("oninput");
+                })
                 break;
 
             case "q":
