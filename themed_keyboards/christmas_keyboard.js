@@ -74,6 +74,17 @@ const keyboard = {
         
         //based on key being looped, there are conditions:
         switch (key) {
+            case "q":
+                keyElement.classList.add("keyboard__key--accent_1");
+                keyElement.innerHTML = "q";
+
+                //what inputs "q"
+                keyElement.addEventListener("click", () => {
+                    this.properties.value = "q";
+                    this._triggerEvent("oninput");
+                });
+                break;
+                
             case "backspace":
                 keyElement.classList.add("keyboard__key--wide");
                 keyElement.innerHTML = createIconHTML("backspace");
