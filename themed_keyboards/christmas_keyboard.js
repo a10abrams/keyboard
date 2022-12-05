@@ -248,6 +248,7 @@ const keyboard = {
                     this._triggerEvent("oninput");
                 });
                 break;
+                
             case "backspace":
                 keyElement.classList.add("keyboard__key--wide", "keyboard__key--accent_1");
                 keyElement.innerHTML = createIconHTML("backspace");
@@ -347,8 +348,101 @@ const keyboard = {
                 })
                 break;
                 
-            case "space":
-                keyElement.classList.add("keyboard__key--extra-wide");
+            case "done":
+                keyElement.classList.add("keyboard__key--wide", "keyboard__key--dark");
+                keyElement.innerHTML = createIconHTML("check_circle");
+                
+                //this is what closes the keyboard
+                keyElement.addEventListener("click", () => {
+                    this.close();
+                    this._triggerEvent("onclose");
+                });
+                break;
+            case "z":
+                keyElement.classList.add("keyboard__key--accent_4");
+                keyElement.innerHTML = "z";
+
+                //what inputs "z"
+                keyElement.addEventListener("click", () => {
+                    this.properties.value += "z";
+                    this._triggerEvent("oninput");
+                });
+                break;
+            
+            case "x":
+                keyElement.classList.add("keyboard__key--accent_4");
+                keyElement.innerHTML = "x";
+
+                //what inputs "x"
+                keyElement.addEventListener("click", () => {
+                    this.properties.value += "x";
+                    this._triggerEvent("oninput");
+                });
+                break;
+            
+            case "c":
+                keyElement.classList.add("keyboard__key--accent_4");
+                keyElement.innerHTML = "c";
+
+                //what inputs "c"
+                keyElement.addEventListener("click", () => {
+                    this.properties.value += "c";
+                    this._triggerEvent("oninput");
+                });
+                break;
+            
+            case "b":
+                keyElement.classList.add("keyboard__key--accent_4");
+                keyElement.innerHTML = "b";
+
+                //what inputs "b"
+                keyElement.addEventListener("click", () => {
+                    this.properties.value += "b";
+                    this._triggerEvent("oninput");
+                });
+                break;
+
+            case "n":
+                keyElement.classList.add("keyboard__key--accent_4");
+                keyElement.innerHTML = "n";
+
+                //what inputs "n"
+                keyElement.addEventListener("click", () => {
+                    this.properties.value += "n";
+                    this._triggerEvent("oninput");
+                });
+                break;
+            
+            case "m":
+                keyElement.classList.add("keyboard__key--accent_4");
+                keyElement.innerHTML = "m";
+
+                //what inputs "m"
+                keyElement.addEventListener("click", () => {
+                    this.properties.value += "m";
+                    this._triggerEvent("oninput");
+                });
+                break;
+            
+            case "?":
+                keyElement.classList.add("keyboard__key--qmark");
+                keyElement.innerHTML = "?";
+
+                //what inputs "?"
+                keyElement.addEventListener("click", () => {
+                    this.properties.value += "?";
+                    this._triggerEvent("oninput");
+                });
+                break;
+
+            case "123":
+                keyElement.classList.add("keyboard__key--wide");
+                keyElement.innerHTML = createIconHTML("emoji_symbols");
+
+                break;
+            
+             case "space":
+                keyElement.classList.add("keyboard__key--extra-wide", "keyboard__key--accent_2");
                 keyElement.innerHTML = createIconHTML("space_bar");
         
                 //this is what spaces
@@ -356,23 +450,6 @@ const keyboard = {
                     this.properties.value += " ";
                     this._triggerEvent("oninput");
                 })
-                break;
-
-            case "done":
-                keyElement.classList.add("keyboard__key--wide", "keyboard__key--dark");
-                keyElement.innerHTML = createIconHTML("check_circle");
-        
-                //this is what "deletes"
-                keyElement.addEventListener("click", () => {
-                    this.close();
-                    this._triggerEvent("onclose");
-                })
-                break;
-
-            case "123":
-                keyElement.classList.add("keyboard__key--wide");
-                keyElement.innerHTML = createIconHTML("emoji_symbols");
-
                 break;
 
             case "lang":
