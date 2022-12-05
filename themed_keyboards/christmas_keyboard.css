@@ -57,6 +57,11 @@
     background: #a58700;
 }
 
+.keyboard__key--accent_2 {
+    background: #FAFAD2;
+    color: #000;
+}
+
 .keyboard__key--activatable::after {
     content: '';
     top: 10px;
