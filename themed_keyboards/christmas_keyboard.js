@@ -46,6 +46,15 @@ const keyboard = {
             });
         });
         
+        //use keyboard for all input elements
+        document.querySelectorAll("input").forEach(element => {
+            element.addEventListener("focus", () => {
+                this.open(element.value, currentValue => {
+                    element.value = currentValue;
+                })
+            });
+        });
+        
     },
 
     /* create keys via html */
