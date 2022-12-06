@@ -120,7 +120,7 @@ const keyboard = {
                 keyElement.classList.add("keyboard__key--accent_2");
                 keyElement.innerHTML = "4";
 
-                //what inputs 1;
+                //what inputs 4;
                 keyElement.addEventListener("click", () => {
                     this.properties.value += "4";
                     this._triggerEvent("oninput");
@@ -186,7 +186,7 @@ const keyboard = {
                 keyElement.classList.add("keyboard__key--accent_2");
                 keyElement.innerHTML = "0";
 
-                //what inputs 1;
+                //what inputs 0;
                 keyElement.addEventListener("click", () => {
                     this.properties.value += "0";
                     this._triggerEvent("oninput");
@@ -197,7 +197,7 @@ const keyboard = {
                 keyElement.classList.add("keyboard__key--accent_1");
                 keyElement.innerHTML ="-";
         
-                //this is what spaces
+                //what inputs "-"
                 keyElement.addEventListener("click", () => {
                     this.properties.value += "-";
                     this._triggerEvent("oninput");
@@ -208,7 +208,7 @@ const keyboard = {
                 keyElement.classList.add("keyboard__key--accent_1");
                 keyElement.innerHTML ="=";
         
-                //this is what spaces
+                //what inputs "="
                 keyElement.addEventListener("click", () => {
                     this.properties.value += "=";
                     this._triggerEvent("oninput");
@@ -367,6 +367,7 @@ const keyboard = {
                     this._triggerEvent("onclose");
                 });
                 break;
+                
             case "z":
                 keyElement.classList.add("keyboard__key--accent_4");
                 keyElement.innerHTML = "z";
